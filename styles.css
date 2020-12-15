@@ -1,0 +1,44 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper #fullpage .page1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/rice-garnish.jpg");
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.wrapper #fullpage .page1 h1 {
+  font-size: 58px;
+  letter-spacing: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper #fullpage .page1 h1 {
+    font-size: 72px;
+  }
+}
+
+.wrapper #fullpage .page2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./images/pizza.jpg");
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.wrapper #fullpage .page2 h2 {
+  font-size: 50px;
+}
+
+.wrapper #fullpage .page2 h3 {
+  font-size: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper #fullpage .page2 .order {
+    width: 400px;
+  }
+}
+
+span {
+  background: #fff !important;
+}
