@@ -6,6 +6,8 @@ $primaryColor: #061824;
 
 .wrapper {
 	#fullpage {
+		background: #000;
+
 		.page1 {
 			background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/rice-garnish.jpg");
 			background-position: center bottom;
@@ -27,19 +29,33 @@ $primaryColor: #061824;
 			background-size: cover;
 
 			h2 {
-				font-size: 50px;
+				font-size: 35px;
+
+				@media screen and (min-width: 768px) {
+					font-size: 50px;
+				}
 			}
 
 			h3 {
-				font-size: 35px;
+				font-size: 25px;
 			}
 
 			.order {
+				transition: all 500ms ease;
+
 				@media screen and (min-width: 768px) {
 					width: 400px;
 				}
+
+				&:hover {
+					background: rgba(0, 0, 0, 0.5);
+				}
 			}
 		}
+	}
+
+	.btn:focus {
+		box-shadow: none;
 	}
 }
 

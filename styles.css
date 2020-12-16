@@ -2,6 +2,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.wrapper #fullpage {
+  background: #000;
+}
+
 .wrapper #fullpage .page1 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/rice-garnish.jpg");
   background-position: center bottom;
@@ -26,17 +30,35 @@
 }
 
 .wrapper #fullpage .page2 h2 {
-  font-size: 50px;
+  font-size: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper #fullpage .page2 h2 {
+    font-size: 50px;
+  }
 }
 
 .wrapper #fullpage .page2 h3 {
-  font-size: 35px;
+  font-size: 25px;
+}
+
+.wrapper #fullpage .page2 .order {
+  transition: all 500ms ease;
 }
 
 @media screen and (min-width: 768px) {
   .wrapper #fullpage .page2 .order {
     width: 400px;
   }
+}
+
+.wrapper #fullpage .page2 .order:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.wrapper .btn:focus {
+  box-shadow: none;
 }
 
 span {
