@@ -43,18 +43,24 @@
   font-size: 25px;
 }
 
+@media screen and (min-width: 768px) {
+  .wrapper #fullpage .page2 h3 {
+    font-size: 35px;
+  }
+}
+
 .wrapper #fullpage .page2 .order {
-  transition: all 500ms ease;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.wrapper #fullpage .page2 .order a {
+  transition: all 300ms ease;
 }
 
 @media screen and (min-width: 768px) {
   .wrapper #fullpage .page2 .order {
     width: 400px;
   }
-}
-
-.wrapper #fullpage .page2 .order:hover {
-  background: rgba(0, 0, 0, 0.5);
 }
 
 .wrapper .btn:focus {
